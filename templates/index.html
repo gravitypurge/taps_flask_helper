@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="/static/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/static/app.js"></script>
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 </head>
 <body>
     <div id="app">
@@ -17,6 +23,23 @@
             <button type="submit">Submit</button>
         </form>
         <div id="result"></div>
+        <div id="table">
+        <table id="results-table" class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Response Code</th>
+                    <th>Model</th>
+                    <th>Prompt Tokens</th>
+                    <th>Completion Tokens</th>
+                    <th>Total Tokens</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>  
+    </div>      
     </div>
 </body>
 </html>
